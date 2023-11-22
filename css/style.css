@@ -1,30 +1,34 @@
-/*mobile-first nav bar*/
-
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #333;
-}
-
-li {
+/*mobile-first logo and nav bar*/
+#logo{
+  display: inline;
+  width: 40%;
+  height: auto;
   float: left;
+  margin-right: 5%;
 }
 
-li a {
-  display: block;
-  color: white;
+#title{
+  width: 50%;
+  display: inline;
+}
+
+#title h1{
+  font-size: 1.63em;
   text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-/* Change the link color to #111 (black) on hover */
-li a:hover {
-  background-color: #111;
+  color: rgb(43, 99, 172);
+  font-family: 'Merriweather', serif;
+  padding-top: 10%;
+  padding-right: 2%;
 }
 
 .active{
-  background-color: blue;
+  background-color: rgb(212,87,87);
+}
+
+@media(min-width: 992px) {
+  #logo{
+	margin-left: 0;
+	width: 15%;
+	height: auto;
+  }
 }
