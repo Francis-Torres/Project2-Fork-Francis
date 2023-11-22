@@ -1,4 +1,8 @@
 /*mobile-first logo and nav bar*/
+header{
+  font-family: 'Merriweather', serif;
+}
+
 #logo{
   display: inline;
   width: 40%;
@@ -16,11 +20,44 @@
   font-size: 1.63em;
   text-align: center;
   color: rgb(43, 99, 172);
-  font-family: 'Merriweather', serif;
   padding-top: 10%;
   padding-right: 2%;
 }
 
+#navbar-container {
+  margin-top: 2%;
+}
+
+#navbar-container ul {
+  padding-inline-start: 0;
+  width: 100%;
+  background-color: rgb(43, 99, 172);
+  list-style-type: none;
+  display: block;
+  float: left;
+}
+
+#navbar-container  ul li {
+  border-width: 1px;
+  margin-top: 1%;
+  border-color: white;
+}
+#navbar-container  ul li a {
+  text-align: center;
+  display: block;
+  padding: 5px;
+  color: white;
+  font-weight: bold;
+  font-size: 4.8vw;
+  text-decoration: none;
+}
+
+#navbar-container  ul li:hover {
+  background-color: rgb(212,87,87);
+}
+#navbar-container  ul li a:hover {
+  color: white;
+}
 .active{
   background-color: rgb(212,87,87);
 }
