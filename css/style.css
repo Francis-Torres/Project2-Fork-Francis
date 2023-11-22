@@ -38,28 +38,21 @@ header{
 }
 
 #navbar-container  ul li {
-  border-width: 1px;
+  border-width: 5px;
   margin-top: 1%;
   border-color: white;
 }
 #navbar-container  ul li a {
   text-align: center;
   display: block;
-  padding: 5px;
+  padding: 10px;
   color: white;
-  font-weight: bold;
-  font-size: 4.8vw;
+  font-size: 1.4em;
   text-decoration: none;
 }
 
-#navbar-container  ul li:hover {
-  background-color: rgb(212,87,87);
-}
-#navbar-container  ul li a:hover {
-  color: white;
-}
 .active{
-  background-color: rgb(212,87,87);
+  background-color: rgb(39, 38, 66);
 }
 
 @media(min-width: 992px) {
@@ -67,5 +60,28 @@ header{
 	margin-left: 0;
 	width: 15%;
 	height: auto;
+  }
+  
+  #title{
+    width: 50%;
+    display: inline;
+  }
+
+  #title h1{
+    font-size: 1.63em;
+    padding-top: 3%;
+  }
+  
+  #navbar-container {
+    display: inline;
+  }
+  
+  #navbar-container ul {
+	width: 80%;
+    display: flex;
+  }
+  
+  #navbar-container  ul li:hover {
+    background-color: rgb(39, 38, 66);
   }
 }
