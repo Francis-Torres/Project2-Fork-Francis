@@ -1,4 +1,4 @@
-/*mobile-first logo and nav bar*/
+/*mobile view logo and nav bar*/
 header{
   font-family: 'Merriweather', serif;
 }
@@ -17,7 +17,7 @@ header{
 }
 
 #title h1{
-  font-size: 1.63em;
+  font-size: 1.60em;
   text-align: center;
   color: rgb(43, 99, 172);
   padding-top: 10%;
@@ -58,7 +58,8 @@ header{
 @media(min-width: 992px) {
   #logo{
 	margin-left: 0;
-	width: 15%;
+	margin-right: 3%;
+	width: 10%;
 	height: auto;
   }
   
@@ -69,7 +70,7 @@ header{
 
   #title h1{
     font-size: 1.63em;
-    padding-top: 3%;
+    padding-top: 1%;
   }
   
   #navbar-container {
@@ -77,11 +78,23 @@ header{
   }
   
   #navbar-container ul {
-	width: 80%;
+	justify-content: center;
+	width: 87%;
     display: flex;
+	padding-bottom: 1%;
+  }
+  
+  #navbar-container  ul li {
+	margin-left: 10%;
+	margin-right: 10%;
+	border-style: solid;
+    border-radius: 25px;
+	border-width: 0px;
+	overflow: hidden;
   }
   
   #navbar-container  ul li:hover {
     background-color: rgb(39, 38, 66);
   }
+
 }
