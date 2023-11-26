@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/contact-style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+  <script src="js/script.js"></script>
+</head>
+<body>
+  <header>
+    <img src="media/logo.jpg" id="logo" alt="ISUD logo">
+	<div id="title">
+	  <h1>The International Society for Universal Language</h1>
+	</div>
+    <nav>
+	  <div id="navbar-container">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html" class="active">Contact Us</a></li>
+        </ul>
+	  <div>
+    </nav>
+  </header>
+  <main>
+    <div id="content">
+    <form method="get" action="#null">
+      <h1>Contact Us</h1>
+      <p>Need to get in touch with us? Please fill out the form below.</p>
+	  <p>We will address your quesitons, comments, or concerns as soon as possible.</p>
+      <ul>
+	    <li id="input-name">
+	    <label for="fname">Name</label>
+		<input type="text" id="fname" name="fname" required>
+	    </li>
+        <li id="input-email">
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" pattern="^.+@.+$" required>
+        </li>
+		<li id="input-phone">
+          <label for="phone-num">Phone</label>
+          <input type="tel" name="phone-num" placeholder="(123) 456-7890" id="phone-num" required>
+		</li>
+		<li id="comm-method">
+		  <label for="comm">Communication Preference:</label>
+            <select id="choice" name="choice">
+              <option value="Email">Email</option>
+              <option value="Text">Text Message</option>
+			  <option value="Call">Phone Call</option>
+            </select>
+		</li>
+		<li id="input-message">
+		  <label for="message">Message</label>
+          <textarea id="message" name="message" rows="7" required"></textarea>
+		</li>
+      </ul>
+      <div id="input-submit">
+        <input type="submit" name="submit" id="submit" value="Send Message">
+      </div>
+    </form>
+    </div>
+  </main>
+  <a id="back2Top" title="Back to top" href="#">&#10148;</a>
+</body>
+</html>

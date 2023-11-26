@@ -1,24 +1,100 @@
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #333;
+/*mobile view logo and nav bar*/
+header{
+  font-family: 'Merriweather', serif;
 }
 
-li {
+#logo{
+  display: inline;
+  width: 40%;
+  height: auto;
+  float: left;
+  margin-right: 5%;
+}
+
+#title{
+  width: 50%;
+  display: inline;
+}
+
+#title h1{
+  font-size: 1.60em;
+  text-align: center;
+  color: rgb(43, 99, 172);
+  padding-top: 10%;
+  padding-right: 2%;
+}
+
+#navbar-container {
+  margin-top: 2%;
+}
+
+#navbar-container ul {
+  padding-inline-start: 0;
+  width: 100%;
+  background-color: rgb(43, 99, 172);
+  list-style-type: none;
+  display: block;
   float: left;
 }
 
-li a {
-  display: block;
-  color: white;
+#navbar-container  ul li {
+  border-width: 5px;
+  margin-top: 1%;
+  border-color: white;
+}
+#navbar-container  ul li a {
   text-align: center;
-  padding: 14px 16px;
+  display: block;
+  padding: 10px;
+  color: white;
+  font-size: 1.4em;
   text-decoration: none;
 }
 
-/* Change the link color to #111 (black) on hover */
-li a:hover {
-  background-color: #111;
+.active{
+  background-color: rgb(39, 38, 66);
+}
+
+@media(min-width: 992px) {
+  #logo{
+	margin-left: 0;
+	margin-right: 3%;
+	width: 10%;
+	height: auto;
+  }
+  
+  #title{
+    width: 50%;
+    display: inline;
+  }
+
+  #title h1{
+    font-size: 1.63em;
+    padding-top: 1%;
+  }
+  
+  #navbar-container {
+    display: inline;
+  }
+  
+  #navbar-container ul {
+	justify-content: center;
+	width: 87%;
+    display: flex;
+	padding-bottom: 1%;
+  }
+  
+  #navbar-container  ul li {
+	margin-left: 10%;
+	margin-right: 10%;
+	border-style: solid;
+    border-radius: 25px;
+	border-width: 0px;
+	overflow: hidden;
+  }
+  
+  #navbar-container  ul li:hover {
+    background-color: rgb(39, 38, 66);
+  }
+
 }
